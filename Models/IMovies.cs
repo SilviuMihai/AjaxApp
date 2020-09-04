@@ -7,6 +7,8 @@ namespace AjaxApp.Models
 {
     interface IMovies
     {
-
+        IEnumerable<MoviesDB> GetAllMovies();
+        MoviesDB GetSpecificMovie(int? id);
+        MoviesDB AddMovie(MoviesDB movie);
     }
 }
