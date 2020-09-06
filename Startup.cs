@@ -27,7 +27,7 @@ namespace AjaxApp
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContextPool<AppDBContext>(options => options (Configuration.GetConnectionString("MoviesDBConnection")));
+            services.AddDbContextPool<AppDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MoviesDBConnection")));
 
             services.AddControllersWithViews().AddXmlSerializerFormatters();
             services.AddRazorPages();
