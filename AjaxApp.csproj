@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200906092510_Movies_Migration.cs" />
+    <Compile Remove="Migrations\20200906092510_Movies_Migration.Designer.cs" />
+    <Compile Remove="Migrations\20200906092826_Movies_Mig_1.cs" />
+    <Compile Remove="Migrations\20200906092826_Movies_Mig_1.Designer.cs" />
+    <Compile Remove="Migrations\20200906093020_Movies_Mig_0.cs" />
+    <Compile Remove="Migrations\20200906093020_Movies_Mig_0.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Home\" />
     <Folder Include="wwwroot\" />
@@ -12,6 +21,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

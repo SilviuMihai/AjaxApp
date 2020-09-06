@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using AjaxApp.Models;
 
 namespace AjaxApp
 {
@@ -31,6 +32,7 @@ namespace AjaxApp
 
             services.AddControllersWithViews().AddXmlSerializerFormatters();
             services.AddRazorPages();
+            services.AddScoped<IMovies, SQLMoviesRepository>();
 
 
         }
