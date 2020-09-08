@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AjaxApp.Models
 {
-    interface IMovies
+    public interface IMovies
     {
         IEnumerable<MoviesDB> GetAllMovies();
         MoviesDB GetSpecificMovie(int? id);

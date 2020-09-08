@@ -1,0 +1,43 @@
+﻿.area1{
+    background-color: #4d88ff;
+    grid-area: a1;
+}
+.area2 {
+    background-color: #4d88ff;
+    grid-area: a2;
+}
+.area3 {
+    background-color: #4d88ff;
+    grid-area: a3;
+}
+.area4 {
+    background-color: #4d88ff;
+    grid-area: a4;
+}
+
+/* Grid Layout !!!    (Structure of the grid)*/
+.container {
+    display: grid;
+    grid-template-areas: 
+        "a1 a1 a1 a1 a1 a1"
+        "a2 a2 a2 a2 a2 a2" 
+        "a3 a3 a3 a3 a3 a3" 
+        "a4 a4 a4 a4 a4 a4";
+    padding: 0px 10px;
+    grid-gap: 10px;
+}
+
+
+/*Structure of the grid in case it gets lower than 760px*/
+@media screen and (min-width:760px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "a1 a1 a1 a1 a1 a1"
+            "a2 a2 a2 a2 a2 a2"
+            "a3 a3 a3 a3 a3 a3" 
+            "a4 a4 a4 a4 a4 a4";
+        padding: 0px 10px;
+        grid-gap: 10px;
+    }
+}
